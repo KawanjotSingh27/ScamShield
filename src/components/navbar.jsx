@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import notif from '../assets/notif.svg'
 import account from '../assets/account.svg'
+import logo from '../assets/shield.svg'
 
 function Navbar(){
     const navigate=useNavigate();
@@ -24,6 +25,7 @@ function Navbar(){
                 <Link to="/about" className="focus:font-medium">About</Link>
             </div>
             <div className="flex ml-112 mr-auto text-2xl">
+                <img className="size-12 -mt-2" src={logo} alt="logo"></img>
                 <p className="font-normal cursor-pointer" onClick={openHome}>Scam</p><p className="text-blue-500 font-semibold cursor-pointer" onClick={openHome}>Shield</p>
             </div>
             <div>
